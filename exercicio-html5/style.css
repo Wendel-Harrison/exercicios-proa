@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+main {
+    position: relative;
+    width: 90%;
+    height: 1000px;
+    margin: auto;
+}
+
+header {
+    position: relative;
+    background-color: black;
+    height: auto;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 25px;
+}
+
+nav {
+    width: 100%;
+    background-color: blue;
+    height: auto;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    padding-inline: 6%;
+    font-size: 20px;
+}
+
+#aside1 {
+    position: relative;
+    width: 20%;
+    float: left;
+    height: 65%;
+    background-color: rgb(179, 179, 179);
+}
+
+aside a {
+    position: relative;
+    display: block;
+    font-size: 25px;
+    padding: 5%;
+    border-block: 1px solid grey ;
+    color: white;
+}
+
+section {
+    float: left;
+    background-color: wheat;
+    width: 60%;
+    height: 65%;
+    text-align: center;
+    padding-top: 1%;
+    font-size: 22px;
+}
+
+#img-celular {
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+    
+}
+
+#img-celular img {
+    width: 100%;
+}
+
+section p {
+    background-color: aqua;
+    width: 90%;
+    margin: auto;
+    margin-top: 2%;
+    font-size: 20px;
+    text-align: justify;
+    height: 18%;
+    
+}
+
+
+
+.imagens {
+    background-color: transparent;
+    width: 26%;
+    height: 23%;
+    float: left;
+    margin: auto;
+    margin-right: 1%;
+    margin-top: 2%;
+
+    margin-left: 5%;
+}
+
+.imagens img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+#aside2 {
+    float: left;
+    background-color: brown;
+    width: 20%;
+    height: 65%;
+}
+
+#aside2 img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: auto;
+    clear: left;
+    text-align: center;
+    padding: 2%;
+    font-size: 35px;
+}
