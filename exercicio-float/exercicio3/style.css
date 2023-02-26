@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#fundo {
+    position: relative;
+    margin: auto;
+    width: 80%;
+    height: 800px;
+}
+
+#header {
+    height: 30px;
+    background-color: black;
+    color: white;
+}
+
+#nav1 {
+    height: 20px;
+    background-color: violet;
+    clear: left;
+
+}
+
+#nav2 {
+    height: 700px;
+    background-color: beige;
+    width: 10%;
+    float: left;
+}
+
+section {
+    height: 700px;
+    background-color: rosybrown;
+    width: 80%;
+    float: left;
+    padding: 5px;
+}
+
+
+
+aside {
+    height: 700px;
+    background-color: rgb(243, 43, 76);
+    float: left;
+    width: 10%;
+}
+
+#header2 {
+    width: 90%;
+    height: 40px;
+    background-color: blanchedalmond;
+    position: relative;
+    margin: auto    ;
+    margin-top: 20px;
+
+    
+}
+
+#camada1 {
+    width: 90%;
+    height: 250px;
+    background-color: brown;
+    margin: auto;
+    margin-top: 20px;
+
+    
+}
+
+ #camada2 {
+    width: 90%;
+    height: 150px;
+    background-color: violet;
+    margin: auto;
+    margin-top: 20px;
+
+} 
+
+#camada3, #camada4, #camada5 {
+    width: 26.5%;
+    height: 140px;
+    float: left;
+    background-color: aliceblue;
+    margin-top: 20px;
+    margin-inline: 5px;
+    margin-left: 40px;
+}
+
+footer {
+    height: 30px;
+    background-color: black;
+    color: white;
+    clear: left;
+    margin-top: 10px;
+}
