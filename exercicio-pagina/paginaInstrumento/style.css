@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 main {
     position: relative;
     width: 92%;
@@ -26,33 +30,40 @@ header {
 nav {
     background-color: #fff;
     width: 40%;
-    position: absolute;
-    top: 120px;
+    position: relative;
     left: 55%;
-    padding-left: 1%;
+    top: -50px;
+    
     height: 40px;
-    padding-top: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between  ;
 }
 
-.links {
+.divs {
+padding-inline: 3%; 
+padding-block: 2%;
+background-color: #fff;
+}
+
+.divs a {
     text-decoration: none;
     color: black;
-    font-size: 18px;
-    padding-inline: 2%;
-    border: 1px solid black;
-    
 }
 
-.links:hover {
-    background: #eeeeee;
-    padding-block: 2%;
+.divs:hover {
+    color: beige;
+    margin-top: 3%;
+    transition: .3s ease;
 }
+
 
 #section1 {
     width: 100%;
     height: 330px;
     background-color: rgba(211, 43, 43, 0.733);
-    margin-top: 1%;
+    margin-top: -2%;
 }
 
 #section1 div, #section1 article{
