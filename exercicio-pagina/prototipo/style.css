@@ -84,4 +84,99 @@ header {
     background-color: blue;
 }
 
+@media only screen and (max-width: 480px) {
+    header {
+        text-align: center;
+    }
 
+    #section1 div {
+        display: block;
+        clear: left;
+        width: 95%;
+        height: 140px;
+        margin: auto;
+        margin-left: 2.5%;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    #article1 {
+        height: 500px;
+    }
+
+    #article1 div {
+        display: block;
+        clear: left;
+        width: 95%;
+        height: 100px;
+        margin: auto;
+        margin-left: 2.5%;
+        margin-top: 20px;
+    }
+
+    #section2 {
+        text-align: center;
+    }
+
+    #article2 {
+        height: 300px;
+    }
+
+    #article2 div {
+        display: block;
+        width: 95%;
+        height: 140px;
+        margin: auto;
+        margin-left: 2.5%;
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    @media only screen and (min-width: 480px ) {
+        header {
+            text-align: center;
+        }
+
+        #section1 div {
+            display: block;
+            clear: left;
+            width: 95%;
+            height: 140px;
+            margin: auto;
+            margin-left: 2.5%;
+            margin-top: 5px;
+            text-align: center;
+        }
+
+        #article1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 10px;
+            padding-inline: 10px;
+        }
+
+        #article1 div {
+            width: 100%;
+            margin: auto;
+        }
+
+        #section2 {
+            text-align: center;
+        }
+
+        #article2 {
+            height: 300px;
+        }
+    
+        #article2 div {
+            display: block;
+            width: 95%;
+            height: 140px;
+            margin: auto;
+            margin-left: 2.5%;
+            margin-top: 5px;
+        }
+
+    }
+}
