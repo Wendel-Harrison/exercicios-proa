@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que ela nasceu).
+    </p>
+
+    <script>
+        const anoNascimento = Number(prompt("Digite o ano de nascimento:"));
+        const anoAtual = new Date().getFullYear();
+        const idade = anoAtual - anoNascimento;
+
+        if (anoNascimento > anoAtual || anoNascimento < 1900) {
+        alert("Ano de nascimento inválido!");
+          document.write("Ano de nascimento inválido!");
+        } else {
+          document.write("Você tem " + idade + " anos.<br>");
+          if (idade >= 18) {
+            alert("Você deverá votar!");
+            document.write("Voce deverá votar!");
+          } else if (idade >= 16) {
+            alert("nâo é obrigado, mas pode!");
+            document.write("nâo é obrigado, mas pode!");
+          } else {
+            alert("Não pode votar");
+            document.write("Não pode votar");
+          }
+        }
+    </script>
+</body>
+</html>

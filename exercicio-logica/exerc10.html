@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Escreva um programa que verifique a validade de uma senha fornecida pelo usuário. A senha válida é o número "1234" sem aspas. Devem ser impressas as seguintes mensagens: "ACESSO PERMITIDO" caso a senha seja válida. "ACESSO NEGADO" caso a senha seja inválida.
+    </p>
+    
+    <script>
+        const senha = prompt("Digite sua senha:");
+
+        if (senha === "1234") {
+          alert("Acesso permitido!");
+          document.write("Acesso permitido!");
+        } else {
+          alert("Acesso negado!");
+          document.write("Acesso negado!");
+        }
+    </script>
+</body>
+</html>

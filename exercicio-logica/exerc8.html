@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Escreva um programa que calcule a média de quatro números informados pelo usuário, mas somente se esses números forem maiores que 0 e menores que 10. No final, se a média for maior que cinco o usuário receberá uma mensagem "Você passou no teste". Em qualquer outra situação, ele receberá uma mensagem de "tente novamente"
+
+    </p>
+
+    <script>
+        media = 0;
+
+        for (let i = 0; i < 4; i++) {
+        let nota = parseFloat(prompt(`Digite á ${i + 1}ª nota: `));
+        if (nota >= 0 && nota <= 10) {
+            media += nota;
+        } else {
+            alert("Nota inválida!");
+         }
+        }
+
+        media = media / 4;
+        alert(`A média é ${media}`);
+        document.write(`A média é ${media}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Faça um programa que leia 6 números que o usuário vai informar. Todos os números lidos com valor inferior a 72 devem ser somados. Escreva o valor final da soma efetuada e também todos valores que o usuário informou.  
+
+    </p>
+
+    <script>
+        soma = 0;
+
+        for (let i = 0; i < 6; i++) {
+        let numero = Number(prompt("Digite um número: "));
+        if (numero < 72) {
+        soma += numero;
+        }
+        }
+
+        alert(`A soma dos números é ${soma}`);
+        document.write(`A soma dos números é ${soma}`);
+    </script>
+</body>
+</html>

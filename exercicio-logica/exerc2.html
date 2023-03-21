@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Faça um programa que leia um valor informado pelo usuário e diga se o valor informado é positivo, negativo ou zero.
+
+    </p>
+    <script>
+        let valor = parseFloat(prompt('informe um numero: '))
+
+        document.write(`seu valor é: ${valor} <br>`)
+        
+
+        if (valor==0) {
+            document.write('seu valor é igual a 0')
+        } else if (valor>0) {
+            document.write('seu valor é positivo!')
+        } else {
+            document.write('seu valor é negativo!')
+
+        }
+    </script>
+</body>
+</html>
