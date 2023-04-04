@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> 3. Faça um script que leia três números inteiros e mostre o maior deles. 
+        <br><br></p>
+
+    <script>
+        const number1 = parseFloat(prompt('Digite um numero'))
+        const number2 = parseFloat(prompt('Digite um numero'))
+        const number3 = parseFloat(prompt('Digite um numero'))
+
+        if(number1> number2 && number1 > number3) {
+            document.write('o numero 1 é o maior')
+        } else if (number2> number1 && number2 > number3) {
+            document.write('o numero 2 é o maior')
+        } else if (number3> number1 && number3 > number2) {
+            document.write('o numero 3 é o maior')
+
+        }
+    </script>
+</body>
+</html>
