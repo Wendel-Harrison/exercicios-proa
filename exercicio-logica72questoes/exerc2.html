@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> 2. Faça um script que pede duas notas de um aluno. Em seguida ele deve calcular a média do aluno e dar o seguinte resultado: 
+        <br><br></p>
+
+    <script>
+        const nota1 = parseInt(prompt('digite sua primeira nota:'))
+        const nota2 = parseInt(prompt('digite sua segunda nota:'))
+
+        const media = parseFloat((nota1 + nota2)/2)
+
+        if(media < 7) {
+            document.write('Voce foi reprovado')
+        } else if(media <10) {
+            document.write('Voce foi aprovado')
+        } else {
+            document.write('Voce foi aprovado com distinção')   
+        }
+    </script>
+</body>
+</html>
