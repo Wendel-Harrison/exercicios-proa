@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> 4. Faça um script que pede dois inteiros e armazene eles em duas variáveis. Em seguida, troque o valor das variáveis, invertendo e exibindo o antes e o depois em uma janela de alert. 
+        <br><br></p>
+
+    <script>
+       let number1 = parseInt(prompt('Numero 1:'))
+       let number2 = parseInt(prompt('Numero 2:'))
+       let number3;
+
+       number3 = number1
+       number1 = number2
+       number2 = number3
+
+       document.write(`o numero 1 é ${number1} <br>`)
+       document.write(`o numero 2 é ${number2}`)
+
+
+    </script>
+</body>
+</html>
+
+
