@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        10. Faça um script que leia um número e exiba o dia correspondente da semana. (1-Domingo, 2- Segunda, etc.), se digitar outro valor deve aparecer valor inválido. 
+
+    </p>
+
+    <script>
+        const dia = parseInt(prompt('Digite um numero de 1 a 7'))
+
+        if (dia == 1) {
+            document.write(`${dia}- Hoje é Domingo`)
+        } else if (dia == 2) {
+            document.write(`${dia}- Hoje é Segunda`)
+        } else if (dia == 3) {
+            document.write(`${dia}- Hoje é Terça`)
+        } else if (dia == 4) {
+            document.write(`${dia}- Hoje é Quarta`)
+        } else if (dia == 5) {
+            document.write(`${dia}- Hoje é Quinta`)
+        } else if (dia == 6) {
+            document.write(`${dia}- Hoje é Sexta`)
+        } else if (dia == 7) {
+            document.write(`${dia}- Hoje é Sábado`)
+        } else {
+            alert('O numero digitado é invalido')
+        }
+    </script>
+</body>
+</html>
