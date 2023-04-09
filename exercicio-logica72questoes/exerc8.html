@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        8. As Organizações Tabajara resolveram dar um aumento de salário aos seus colaboradores e lhe contrataram para desenvolver um script que calculará os reajustes. 
+
+        <br><br></p>
+
+    <script>
+        
+       let salario = parseFloat(prompt('Digite o salario do colaborador'))
+
+       if(salario >= 1500.00) {
+        const ajuste = salario * 0.05;
+        document.write(`Seu salário antes era: ${salario} <br><br>`)
+        document.write(`O percentual de ajuste foi de: 5% <br><br>`)
+        document.write(`O valor do aumento foi de: ${ajuste.toFixed(2)} <br><br>`)
+        document.write(`O novo salário, após o aumento é de: ${(ajuste + salario).toFixed(2)} <br><br>`)
+       } else if (salario >= 700.00) {
+        const ajuste = salario * 0.10;
+        document.write(`Seu salário antes era: ${salario} <br><br>`)
+        document.write(`O percentual de ajuste foi de: 10% <br><br>`)
+        document.write(`O valor do aumento foi de: ${ajuste.toFixed(2)} <br><br>`)
+        document.write(`O novo salário, após o aumento é de: ${(ajuste + salario).toFixed(2)} <br><br>`)
+       } else if (salario>280.00) {
+        const ajuste = salario * 0.15;
+        document.write(`Seu salário antes era: ${salario} <br><br>`)
+        document.write(`O percentual de ajuste foi de: 15% <br><br>`)
+        document.write(`O valor do aumento foi de: ${ajuste.toFixed(2)} <br><br>`)
+        document.write(`O novo salário, após o aumento é de: ${(ajuste + salario).toFixed(2)} <br><br>`)
+       } else if (salario<=280.00 && salario>=0) {
+        const ajuste = salario * 0.20;
+        document.write(`Seu salário antes era: ${salario} <br><br>`)
+        document.write(`O percentual de ajuste foi de: 20% <br><br>`)
+        document.write(`O valor do aumento foi de: ${ajuste.toFixed(2)} <br><br>`)
+        document.write(`O novo salário, após o aumento é de: ${(ajuste + salario).toFixed(2)} <br><br>`)
+       } else {
+        alert('digite um valor valido')
+       }
+       
+
+
+    </script>
+</body>
+</html>
