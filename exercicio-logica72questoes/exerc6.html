@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>6. Faça um script que leia três números e mostre-os em ordem decrescente. 
+        <br><br></p>
+
+    <script>
+        const number1 = parseFloat(prompt('Digite um numero'))
+        const number2 = parseFloat(prompt('Digite um numero'))
+        const number3 = parseFloat(prompt('Digite um numero'))
+
+        if(number1>number2 && number2>number3) {
+            document.write('1° numero: ' + number1 + '<br>');
+            document.write('2° numero: ' + number2 + '<br>');
+            document.write('3° numero: ' + number3 + '<br>');
+        } else if (number1>number3 && number3>number2) {
+            document.write('1° numero: ' + number1 + '<br>');
+            document.write('2° numero: ' + number3 + '<br>');
+            document.write('3° numero: ' + number2 + '<br>');
+        } else if (number2>number1 && number1>number3) {
+            document.write('1° numero: ' + number2 + '<br>');
+            document.write('2° numero: ' + number1 + '<br>');
+            document.write('3° numero: ' + number3 + '<br>');
+        } else if (number2>number3 && number3>number1) {
+            document.write('1° numero: ' + number2 + '<br>');
+            document.write('2° numero: ' + number3 + '<br>');
+            document.write('3° numero: ' + number1 + '<br>');
+        } else if (number3>number1 && number1>number2) {
+            document.write('1° numero: ' + number3 + '<br>');
+            document.write('2° numero: ' + number1 + '<br>');
+            document.write('3° numero: ' + number2 + '<br>');
+        } else if (number3>number2 && number2>number1) {
+            document.write('1° numero: ' + number3 + '<br>');
+            document.write('2° numero: ' + number2 + '<br>');
+            document.write('3° numero: ' + number1 + '<br>');
+        }
+
+    </script>
+</body>
+</html>
