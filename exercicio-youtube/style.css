@@ -124,6 +124,7 @@ form button:hover {
     height: 90vh;
     padding: 5px 5px 0 15px;
     overflow-y: scroll;
+    z-index: 11;
 }
 
 #conteudo {
@@ -180,10 +181,13 @@ hr {
     border-radius: 30px;
 }
 
+
+
 /* --------------- SCROLLBAR MODIFICADA ------------ */
 
 *::-webkit-scrollbar {
     width: 16px;
+    visibility: hidden;
 }
 
 *::-webkit-scrollbar-track {
@@ -196,6 +200,7 @@ hr {
     border: 4px solid transparent;
     background-clip: content-box;
     background-color: #888;
+    
 }
 
 *::-webkit-scrollbar-thumb:hover {
@@ -209,10 +214,16 @@ hr {
     align-items: center;
     gap: 12px;
     padding: 8px 20px;
-    overflow-x: scroll;
-    width: 100%;
+    width: 80%;
     z-index: 1;
+    overflow-x: hidden;
+}
 
+#navSlider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
 }
 
 #menu-header a {
@@ -227,6 +238,38 @@ hr {
 #menu-header a:first-child {
     background-color: #000;
     color: #fff;
+}
+
+.setaDireita {
+    background-color: #fff;
+    padding: 4px;
+    padding-left: 6px;
+    border-radius: 30px;
+    position: fixed;
+    left: 96.5%;
+    z-index: 10;
+    top: 10%;
+}
+
+.setaEsquerda {
+    background-color: #fff;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 0;
+    border-radius: 30px;
+    position: absolute;
+    left: 20px;
+    z-index: 10;
+    top: .8%;
+    visibility: hidden;
+    transition: .5s;
+}
+
+
+
+.setaDireita:hover {
+    background-color: rgba(226, 224, 224, 0.315);
+
 }
 
 #menu-header a:hover {
