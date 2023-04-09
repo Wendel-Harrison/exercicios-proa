@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Faça um script que lê as duas notas parciais obtidas por um aluno numa disciplina ao longo de um semestre, e calcule a sua média. A atribuição de conceitos obedece à tabela abaixo: 
+
+    </p>
+
+    <script>
+        const nota1 = parseFloat(prompt('nota 1'))
+        const nota2 = parseFloat(prompt('nota 2'))
+
+        const media = (nota1 + nota2) / 2
+
+        if(media>=9 && media<=10) {
+            alert(`nota 1: ${nota1}; nota 2: ${nota2}; media: ${media}; Conceito: A; voce foi: APROVADO`)
+        } else if(media>=7.5) {
+            alert(`nota 1: ${nota1}; nota 2: ${nota2}; media: ${media}; Conceito: B; voce foi: APROVADO`)
+        } else if(media>=6) {
+            alert(`nota 1: ${nota1}; nota 2: ${nota2}; media: ${media}; Conceito: C; voce foi: APROVADO`)
+        } else if(media>=4) {
+            alert(`nota 1: ${nota1}; nota 2: ${nota2}; media: ${media}; Conceito: D; voce foi: REPROVADO`)
+        } else if(media>=0) {
+            alert(`nota 1: ${nota1}; nota 2: ${nota2}; media: ${media}; Conceito: E; voce foi: REPROVADO`)
+        }
+
+    </script>
+</body>
+</html>
