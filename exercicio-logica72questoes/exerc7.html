@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Faça um script que pergunte em que turno você estuda. Peça para digitar M-matutino ou V-Vespertino ou N- Noturno. Imprima a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!" ou "Valor Inválido!", conforme o caso. 
+
+        <br><br></p>
+
+    <script>
+        
+       const periodo = prompt('digite p periodo que estuda em M, V ou N').toLowerCase()
+
+       if(periodo == 'm') {
+        document.write('Bom dia!')
+       } else if(periodo == 'v') {
+        document.write('Boa Tarde!')
+       } else if(periodo == 'n') {
+        document.write('Boa Noite!')
+       } else {
+        alert('Invalid periodo')
+    }
+
+
+    </script>
+</body>
+</html>
